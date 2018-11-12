@@ -2,9 +2,6 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-const bkg = console.log;
-
-
 function createForm() {
   chrome.storage.sync.get(['removedContextMenu'], function (list) {
     let removed = list.removedContextMenu || [];
@@ -31,13 +28,13 @@ function createForm() {
 function populateHistory() {
   chrome.storage.sync.get('searchHistory', function (list) {
     let searches = list.searchHistory || [];
-    bkg(searches.reverse());
+    console.log(searches.reverse());
     // searches = ['san holo', 'anomalie', 'mitski']
     let container = document.getElementById('history'); // gets div from options.html named history
     for (let item in searches) {
       let div = document.createElement('div'); // starts construction
       let span = document.createElement('span');
-      bkg(searches[item]);
+      console.log(searches[item]);
       span.textContent = searches[item];
       div.appendChild(span); //constructs and adds the span to the history div
       container.appendChild(div); // the div is added

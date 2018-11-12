@@ -22,8 +22,8 @@
     "default_popup": "options.html"
   },
   "icons": {
-    "16": "globalGoogle16.png",
-    "48": "globalGoogle48.png",
-    "128": "globalGoogle128.png"
+    "16": "placeholder16.png",
+    "48": "placeholder48.png",
+    "128": "placeholder128.png"
   }
 }
