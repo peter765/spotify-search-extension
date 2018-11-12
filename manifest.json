@@ -1,7 +1,7 @@
 {
-  "name": "Global Google Search",
-  "description": "Use the context menu to search a different country's Google",
-  "version": "1.0",
+  "name": "Spotify Search Extension",
+  "description": "Use the context menu to search for the highlighted term on Spotify",
+  "version": "0.1",
   "manifest_version": 2,
   "options_page": "options.html",
   "permissions": [
